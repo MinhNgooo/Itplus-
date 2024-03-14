@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: yellow; /* Đặt màu nền là màu vàng */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột bằng nhau */
+            grid-gap: 10px; /* Khoảng cách giữa các ô */
+        }
+        .form-row {
+            display: flex;
+            align-items: center;
+        }
+        .form-row label {
+            width: 100px; /* Đặt chiều rộng của label */
+        }
+        .form-row input, 
+        .form-row select {
+            flex: 1; /* Input và select sẽ mở rộng để điền vào không gian còn lại */
+        }
+    </style>
+</head>
+<body>
+<div style="background-color: aquamarine;">ĐĂNG KÝ HỌC VIÊN </div>
+<div class="container">
+    <div class="form-row">
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname">
+    </div>
+    <div class="form-row">
+        <label for="birthday">Ngày sinh</label>
+        <input type="text" id="birthday">
+    </div>
+    <div class="form-row">
+        <label for="gender">Giới Tính</label>
+        <input type="checkbox" id="gender" value="nam"><label for="gender">Nam</label>
+        <input type="checkbox" id="gender" value="nữ"><label for="gender">Nữ</label>
+    </div>
+    <div class="form-row">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address">
+    </div>
+    <div class="form-row">
+        <label for="class">Lớp</label>
+        <select id="class">
+            <option>-chọn lớp-</option>
+            <option>Lớp A</option>
+            <option>Lớp B</option>
+            <option>Lớp C</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="email">Email</label>
+        <input type="text" id="email">
+    </div>
+    <div class="form-row">
+        <label for="phone">Điện Thoại</label>
+        <input type="text" id="phone">
+    </div>
+</div>
+<div class="form-row">
+    <input type="button" value="Đăng ký">
+    <input type="button" value="Nhập Lại">
+</div>
+</body>
+</html>
